@@ -38,4 +38,14 @@
 
   <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
 
+  <div>
+    <h2 style="margin-bottom: 10px;">🌱 GitHub Stats</h2>
+    <p>
+      <img src="https://github-readme-stats.vercel.app/api?username=Loopz22&theme=dark" alt="GitHub Stats" style="width: 400px;">
+    </p>
+    <p>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Loopz22&hide=html&layout=compact&theme=dark" alt="Top Languages" style="width: 400px;">
+    </p>
+  </div>
+
 </div>
