@@ -5,71 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loopz - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-  <div id="home" class="section">
+  <header>
     <div class="container">
-      <h1>Welcome to Loopz's Portfolio</h1>
-      <p>Hello, I'm Loopz. I'm a programming enthusiast, always seeking new challenges and learning experiences.</p>
-      <a href="#about" class="btn">About Me</a>
+      <h1>Loopz</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#github">GitHub</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="about" class="section">
+  <section id="about" class="section">
     <div class="container">
-      <h2>About me</h2>
-      <p>I am passionate about coding and enjoy creating solutions to complex problems. With a strong foundation in Java, JavaScript, and Node.js, I am constantly expanding my skill set to tackle new projects and challenges.</p>
-      <a href="#skills" class="btn">My Skills</a>
-    </div>
-  </div>
-
-  <div id="skills" class="section">
-    <div class="container">
-      <h2>My skills</h2>
-      <div class="skills-icons">
-        <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java">
-        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" title="JavaScript">
-        <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js">
-        <img src="https://skillicons.dev/icons?i=maven" alt="Maven" title="Maven">
-        <img src="https://skillicons.dev/icons?i=gradle" alt="Gradle" title="Gradle">
-        <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" title="SQLite">
-        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL">
-        <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis">
-        <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML">
-        <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase">
+      <div class="content">
+        <h2>About me</h2>
+        <p>Hello, I'm Loopz. I'm a programming enthusiast, always seeking new challenges and learning experiences.</p>
+        <a href="#skills" class="btn">My Skills</a>
       </div>
-      <a href="#focus" class="btn">Currently Focusing On</a>
+      <img src="https://via.placeholder.com/400" alt="About Image" class="about-img">
     </div>
-  </div>
+  </section>
 
-  <div id="focus" class="section">
+  <section id="skills" class="section">
     <div class="container">
-      <h2>Currently focusing on</h2>
-      <ul>
-        <li>LanerNetwork 🌐</li>
-        <li>Simplex 🛠️</li>
-        <li>Custom Models Blockbench 🎨</li>
-      </ul>
-      <a href="#github" class="btn">GitHub Stats</a>
-    </div>
-  </div>
-
-  <div id="github" class="section">
-    <div class="container">
-      <h2>GitHub Stats</h2>
-      <div class="github-stats">
-        <img src="https://github-readme-stats.vercel.app/api?username=Loopz22&theme=dark_light" alt="GitHub Stats">
-      </div>
-      <div class="github-languages">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Loopz22&hide=html&layout=compact&theme=light" alt="Top Languages">
+      <div class="content">
+        <h2>My skills</h2>
+        <div class="skills-icons">
+          <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java">
+          <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" title="JavaScript">
+          <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js">
+          <img src="https://skillicons.dev/icons?i=maven" alt="Maven" title="Maven">
+          <img src="https://skillicons.dev/icons?i=gradle" alt="Gradle" title="Gradle">
+          <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" title="SQLite">
+          <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL">
+          <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis">
+          <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML">
+          <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase">
+        </div>
+        <a href="#focus" class="btn">Currently Focusing On</a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="focus" class="section">
+    <div class="container">
+      <div class="content">
+        <h2>Currently focusing on</h2>
+        <ul>
+          <li>LanerNetwork 🌐</li>
+          <li>Simplex 🛠️</li>
+          <li>Custom Models Blockbench 🎨</li>
+        </ul>
+        <a href="#github" class="btn">GitHub Stats</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="github" class="section">
+    <div class="container">
+      <div class="content">
+        <h2>GitHub Stats</h2>
+        <div class="github-stats">
+          <img src="https://github-readme-stats.vercel.app/api?username=Loopz22&theme=dark_light" alt="GitHub Stats">
+        </div>
+        <div class="github-languages">
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Loopz22&hide=html&layout=compact&theme=light" alt="Top Languages">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
       <p>&copy; 2024 Loopz. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="animations.js"></script>
 </body>
 </html>
