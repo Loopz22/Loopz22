@@ -1,6 +1,11 @@
-body {
+/* Reset de estilos */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,29 +16,34 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #343a40;
   padding: 20px 0;
 }
 
-header h1 {
-  margin: 0;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 24px;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin-left: 20px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .section {
@@ -41,36 +51,36 @@ nav ul li a {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-.btn:hover {
-  background-color: #555;
+  text-align: center;
 }
 
 .skills-icons {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.skills-icons img {
-  width: 60px;
-  margin: 10px;
+.skill {
+  margin: 0 10px;
+}
+
+.skill img {
+  width: 80px;
+}
+
+.skill span {
+  display: block;
+  margin-top: 10px;
+}
+
+.focus ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.focus li {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .github-stats {
@@ -82,8 +92,11 @@ nav ul li a {
 }
 
 footer {
-  background-color: #333;
+  background-color: #343a40;
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
