@@ -4,89 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loopz - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-    .container {
-      background-color: #f0f0f0;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      max-width: 800px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
-      margin-bottom: 10px;
-    }
-    p {
-      margin: 10px 0;
-    }
-    ul {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-    img.skill-icon {
-      width: 30px;
-      margin-right: 5px;
-      transition: transform 0.3s ease, filter 0.3s ease;
-    }
-    img.skill-icon:hover {
-      transform: scale(1.1);
-      filter: brightness(110%);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div>
-      <h2>👋 About me</h2>
+  <header>
+    <nav>
+      <h1>Loopz</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#github">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About me</h2>
       <p>Hello, I'm Loopz. I'm a programming enthusiast, always seeking new challenges and learning experiences.</p>
     </div>
+  </section>
 
-    <hr>
-
-    <div>
-      <h2>💻 My skills</h2>
-      <p>
-        <img src="https://skillicons.dev/icons?i=java" alt="Java" class="skill-icon" title="Java">
-        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" class="skill-icon" title="JavaScript">
-        <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="skill-icon" title="Node.js">
-        <img src="https://skillicons.dev/icons?i=maven" alt="Maven" class="skill-icon" title="Maven">
-        <img src="https://skillicons.dev/icons?i=gradle" alt="Gradle" class="skill-icon" title="Gradle">
-        <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" class="skill-icon" title="SQLite">
-        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="skill-icon" title="MySQL">
-        <img src="https://skillicons.dev/icons?i=redis" alt="Redis" class="skill-icon" title="Redis">
-        <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="skill-icon" title="HTML">
-        <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" class="skill-icon" title="Firebase">
-      </p>
+  <section id="skills">
+    <div class="container">
+      <h2>My skills</h2>
+      <div class="skills-icons">
+        <img src="https://skillicons.dev/icons?i=java" alt="Java" title="Java">
+        <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript" title="JavaScript">
+        <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" title="Node.js">
+        <img src="https://skillicons.dev/icons?i=maven" alt="Maven" title="Maven">
+        <img src="https://skillicons.dev/icons?i=gradle" alt="Gradle" title="Gradle">
+        <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" title="SQLite">
+        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" title="MySQL">
+        <img src="https://skillicons.dev/icons?i=redis" alt="Redis" title="Redis">
+        <img src="https://skillicons.dev/icons?i=html" alt="HTML" title="HTML">
+        <img src="https://skillicons.dev/icons?i=firebase" alt="Firebase" title="Firebase">
+      </div>
     </div>
+  </section>
 
-    <hr>
-
-    <div>
-      <h2>🚀 Currently focusing on</h2>
+  <section id="focus">
+    <div class="container">
+      <h2>Currently focusing on</h2>
       <ul>
         <li>LanerNetwork 🌐</li>
         <li>Simplex 🛠️</li>
         <li>Custom Models Blockbench 🎨</li>
       </ul>
     </div>
+  </section>
 
-    <hr>
-
-    <div>
-      <h2>🌱 GitHub Stats</h2>
-      <p>
-        <img src="https://github-readme-stats.vercel.app/api?username=Loopz22&theme=dark_light" alt="GitHub Stats" style="width: 400px;">
-      </p>
-      <p>
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Loopz22&hide=html&layout=compact&theme=light" alt="Top Languages" style="width: 400px;">
-      </p>
+  <section id="github">
+    <div class="container">
+      <h2>GitHub Stats</h2>
+      <div class="github-stats">
+        <img src="https://github-readme-stats.vercel.app/api?username=Loopz22&theme=dark_light" alt="GitHub Stats">
+      </div>
+      <div class="github-languages">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Loopz22&hide=html&layout=compact&theme=light" alt="Top Languages">
+      </div>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Loopz. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
