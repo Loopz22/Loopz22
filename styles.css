@@ -4,57 +4,39 @@ body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-}
-
-header nav {
+.section {
+  height: 100vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-header h1 {
-  font-size: 24px;
-}
-
-header ul {
-  list-style-type: none;
-}
-
-header ul li {
-  display: inline;
-  margin-left: 20px;
-}
-
-header ul li a {
-  color: #fff;
-  text-decoration: none;
+  text-align: center;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
 }
 
-section {
-  background-color: #f0f0f0;
-  padding: 40px 0;
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
 }
 
-section h2 {
-  text-align: center;
+.btn:hover {
+  background-color: #555;
 }
 
 .skills-icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .skills-icons img {
@@ -67,4 +49,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
